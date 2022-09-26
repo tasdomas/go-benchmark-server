@@ -1,0 +1,10 @@
+on: [workflow_dispatch]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Checking the action
+    steps:
+      - name: Just a check
+        id: check
+        uses: tasdomas/go-benchmark-action@latest
